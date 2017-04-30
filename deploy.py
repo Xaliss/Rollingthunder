@@ -1,6 +1,6 @@
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
 @app.route('/')
-def index():
+	def index():
 	return '<h1>Deploye ds Heroku</h1>'
