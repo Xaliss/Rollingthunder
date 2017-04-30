@@ -1,9 +1,12 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template
 import jinja2
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/',methods=["GET"])
 def index():
-	return render_template('la_page.html')
+	return render_template('base1.html')
 	#return '<H1>Et Voila !!!</H1>'
+
+if __name__ == "__main__":
+	app.run(debug=True)
