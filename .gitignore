@@ -1,2 +1,5 @@
 flaskenv
 *.pyc
+build
+*~
+ 
