@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return '<h1>Deploye ds Heroku</h1><h3>On y Arrivera !!!</h3>'
+	return render_template("mapage.html")
